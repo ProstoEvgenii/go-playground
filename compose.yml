@@ -1,0 +1,8 @@
+services:
+  rest-service:
+    build: .
+    network_mode: host
+    env_file:
+      - .env
+    ports:
+      - "3232:3232"
